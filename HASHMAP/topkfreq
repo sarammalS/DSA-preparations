@@ -1,0 +1,39 @@
+import java.util.*;
+
+public class MaxHeapExample {
+    public static void main(String[] args) {
+        int[] arr = {1, 1, 1, 2, 2, 3};
+        int k = 2;
+
+        // Step 1: Count frequencies
+        Map<Integer, Integer> freq = new HashMap<>();
+        for (int num : arr) {
+            freq.put(num, freq.getOrDefault(num, 0) + 1);
+        }
+
+        // Step 2: Create max-heap based on frequency
+        PriorityQueue<Integer> maxHeap = new PriorityQueue<>(
+            (a, b) -> freq.get(b) - freq.get(a)  // higher frequency first
+        );
+
+        // Step 3: Add all elements to heap
+        for (int num : freq.keySet()) {
+            maxHeap.add(num);
+        }
+
+        // Step 4: Extract top k elements
+        List<Integer> result = new ArrayList<>();
+        for (int i = 0; i < k; i++) {
+            result.add(maxHeap.poll());  // removes top element (max freq)
+        }
+
+        // Step 5: Print result
+        System.out.println("Top " + k + " frequent elements: " + result);
+
+        // Optional: Show heap after each poll
+        System.out.println("Heap after polling top " + k + " elements:");
+        while (!maxHeap.isEmpty()) {
+            System.out.print(maxHeap.poll() + " ");
+        }
+    }
+}
