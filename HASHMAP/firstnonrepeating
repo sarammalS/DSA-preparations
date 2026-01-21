@@ -1,0 +1,23 @@
+String s = "aabbcdde";
+
+int[] freq = new int[26];
+
+// count frequency
+for (int i = 0; i < s.length(); i++) {
+    freq[s.charAt(i) - 'a']++;
+}
+
+// find first non-repeating
+char ans = '#';
+for (int i = 0; i < s.length(); i++) {
+    if (freq[s.charAt(i) - 'a'] == 1) {
+        ans = s.charAt(i);
+        break;
+    }
+}
+
+if (ans == '#') {
+    System.out.println(-1);
+} else {
+    System.out.println(ans);
+}
