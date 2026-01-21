@@ -1,0 +1,39 @@
+import java.util.*;
+
+public class TopThreeRepeated {
+    public static void main(String[] args) {
+        int[] arr = {4, 4, 4, 5, 5, 6, 6, 6, 7};
+
+        // Step 1: Count frequencies
+        Map<Integer, Integer> freq = new HashMap<>();
+        for (int num : arr) {
+            freq.put(num, freq.getOrDefault(num, 0) + 1);
+        }
+
+        // Step 2: Max-heap (frequency desc, number asc if tie)
+        PriorityQueue<Integer> maxHeap = new PriorityQueue<>(
+            (a, b) -> {
+                if (!freq.get(a).equals(freq.get(b))) {
+                    return freq.get(b) - freq.get(a); // higher freq first
+                } else {
+                    return a - b; // smaller number first if tie
+                }
+            }
+        );
+
+        // Step 3: Add all numbers to heap
+        for (int num : freq.keySet()) {
+            maxHeap.add(num);
+        }
+
+        // Step 4: Extract top 3 elements
+        List<Integer> result = new ArrayList<>();
+        int count = 0;
+        while (!maxHeap.isEmpty() && count < 3) {
+            result.add(maxHeap.poll());
+            count++;
+        }
+
+        System.out.println(result);
+    }
+}
