@@ -1,0 +1,29 @@
+public class PalindromeCheck {
+    public static void main(String[] args) {
+        int num = 112233;
+        
+        int[] freq = new int[10];
+        
+        // Count digit frequencies
+        int temp = num;
+        while (temp > 0) {
+            int digit = temp % 10;
+            freq[digit]++;
+            temp /= 10;
+        }
+        
+        // Count odd frequencies
+        int oddCount = 0;
+        for (int f : freq) {
+            if (f % 2 != 0) {
+                oddCount++;
+            }
+        }
+        
+        if (oddCount > 1) {
+            System.out.println("No");
+        } else {
+            System.out.println("Yes");
+        }
+    }
+}
