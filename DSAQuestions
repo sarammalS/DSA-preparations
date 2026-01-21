@@ -1,0 +1,646 @@
+# DSA Problems - Pattern-Wise Organization
+
+## 1. HashMap / Frequency Counting Patterns
+
+### 1.1 Frequency Map
+- Frequency Sort
+- First Non-Repeating Character
+- Top K Frequent / Most Frequent Elements
+- Second Most Frequent Element
+- Top three repeated numbers
+- Sort elements by frequency of occurrence
+- Check if a number can be rearranged into Palindrome (odd/even freq count)
+
+### 1.2 Prefix Sum + HashMap
+- Longest subarray with sum K
+- Count subarrays with given sum K
+- Count subarrays with given XOR K
+- Equilibrium Index of Array
+
+### 1.3 Sliding Window + HashMap
+- Longest Substring Without Repeating Characters
+- Minimum Window Substring
+- Subarrays with K Different Integers
+- Longest Substring With At Most K Distinct Characters
+- Fruit Into Baskets (At Most 2 Types)
+
+### 1.4 Anagram / String Grouping
+- Group Anagrams
+- Substring with Concatenation of All Words
+
+### 1.5 Complement Lookup
+- Two Sum
+- Three Sum
+- Happy Number (detect cycle using hashmap/set)
+- Product of Array Except Self
+
+### 1.6 Index Mapping
+- Next Greater Element
+- Maximum Distance Between Same Elements
+- Find Extra Char in Second String
+
+### 1.7 Consecutive Sequence
+- Longest Consecutive Sequence in an Array
+
+---
+
+## 2. Binary Search Patterns
+
+### 2.1 Basic Binary Search
+- Search X in sorted array
+- Lower Bound
+- Upper Bound
+- Search insert position
+- Floor and Ceil in Sorted Array
+- First and last occurrence
+
+### 2.2 Rotated Array
+- Search in rotated sorted array-I
+- Search in rotated sorted array-II
+- Find minimum in Rotated Sorted Array
+- Find out how many times the array is rotated
+
+### 2.3 Binary Search on Answer
+- Find square root of a number
+- Find Nth root of a number
+- Find the smallest divisor
+- Koko eating bananas
+- Minimum days to make M bouquets
+- Aggressive Cows
+- Book Allocation Problem
+- Split array - largest sum
+- Minimize Max Distance to Gas Station
+
+### 2.4 Special Cases
+- Single element in sorted array
+- Find peak element
+- Missing number in sorted array
+
+### 2.5 2D Binary Search
+- Search in a 2D matrix
+- Search in 2D matrix - II
+- Find Peak Element - II
+- Matrix Median
+- Find row with maximum 1's
+
+### 2.6 Two Sorted Arrays
+- Median of 2 sorted arrays
+- Kth element of 2 sorted arrays
+
+---
+
+## 3. Two Pointers Pattern
+
+### 3.1 Opposite Direction
+- Two Sum II (Sorted Array)
+- Container With Most Water
+- Trapping Rain Water
+- Valid Palindrome
+- Squares of Sorted Array
+- 3Sum / 3Sum Closest
+- 4Sum
+
+### 3.2 Same Direction (Fast-Slow)
+- Remove Duplicates from Sorted Array
+- Move Zeroes
+- Dutch National Flag / Sort Colors
+
+### 3.3 Sliding Window (Fixed Size)
+- Average of Subarray of Size K
+- Max Sum of Subarray of Size K
+- Maximum Number of Vowels in a Substring of Size K
+
+### 3.4 Sliding Window (Variable Size)
+- Longest Substring Without Repeating Characters
+- Minimum Window Substring
+- Longest Repeating Character Replacement
+- Maximum Consecutive Ones II
+- Fruit Into Baskets
+- Permutation in String
+- Count Subarrays with Sum at Most K
+- Minimum Swaps to Group All 1's Together
+
+---
+
+## 4. Recursion & Backtracking Patterns
+
+### 4.1 Simple Recursion
+- Tower of Hanoi
+- Fibonacci
+- Factorial
+- Sum of digits
+- Power of a number
+- Reverse a string
+- Check if string is palindrome
+
+### 4.2 Generate All Combinations
+- Pow(x,n)
+- Generate Parentheses
+- Power Set
+- Subsets I
+- Subsets II
+- Combination Sum
+- Combination Sum II
+- Combination Sum III
+- Letter Combinations of a Phone Number
+
+### 4.3 Subsequence Problems
+- Check if there exists a subsequence with sum K
+- Count all subsequences with sum K
+
+### 4.4 Backtracking on Grids
+- N Queen
+- Rat in a Maze
+- M Coloring Problem
+- Sudoku Solver
+- Word Search
+- Palindrome partitioning
+
+### 4.5 DFS Recursion
+- Flood Fill
+- Count islands
+- Knight's Tour problem
+- Print all paths from source to destination
+
+---
+
+## 5. Bit Manipulation Patterns
+
+### 5.1 XOR Tricks
+- Single Number - I, II, III
+- Find the missing number
+- Find the extra element
+- XOR of numbers in a given range
+- Swap two numbers without temp variable
+- Check if two numbers have opposite signs
+
+### 5.2 Bit Operations
+- Minimum Bit Flips to Convert Number
+- Count number of 1's in binary (Hamming weight)
+- Check if a number is power of 2
+- Maximum consecutive 1s in binary
+
+### 5.3 Subset Generation (Bitmask)
+- Power Set Bit Manipulation
+- Subset sum using bitmasking
+- Generate all combinations of 0/1
+
+### 5.4 Special Checks
+- Check if number's binary representation is palindrome
+- Insert 0 after consecutive K 1s
+- Find maximum of three numbers using bit manipulation
+
+---
+
+## 6. Greedy Patterns
+
+### 6.1 Activity Selection / Interval
+- Assign Cookies
+- N meetings in one room
+- Non-overlapping Intervals
+- Insert Interval
+- Maximum Overlapping Interval
+- Merge Intervals
+
+### 6.2 Job Scheduling
+- Shortest Job First
+- Job sequencing Problem
+- Minimum number of platforms required for a railway
+
+### 6.3 Array Manipulation
+- Jump Game - I
+- Lemonade Change
+- Valid Parenthesis Checker
+- Candy
+- Leaders in Array
+
+### 6.4 Optimal Selection
+- Form Largest Possible Number From Array
+- Alternate Sorting (Largest-Smallest)
+- Minimize Number of Bike Trips (Pairing)
+- Chocolate Wrapper Problem
+- Maximum Sum Using Given Operations
+
+### 6.5 Kadane's Algorithm Variants
+- Maximum Sum Contiguous Subarray
+- Maximum Product Subarray
+
+---
+
+## 7. Stack Patterns
+
+### 7.1 Monotonic Stack
+- Next Greater Element I, II
+- Daily Temperatures
+- Largest Rectangle in Histogram
+- Trapping Rain Water
+- Stock span problem
+- Sum of Subarray Minimums
+- Sum of Subarray Ranges
+- 132 Pattern
+
+### 7.2 Expression Evaluation
+- Valid Parentheses
+- Balanced Parentheses
+- Evaluate Reverse Polish Notation (RPN)
+- Basic Calculator I & II
+
+### 7.3 String Manipulation
+- Remove K Digits
+- Simplify Path
+
+### 7.4 Special Stack Designs
+- Implement Min Stack
+- Implement Stack using Queue
+- Implement stack using Linkedlist
+
+---
+
+## 8. Queue Patterns
+
+### 8.1 BFS Applications
+- Rotting Oranges
+- Snake and Ladders
+- Word Ladder
+- Flood Fill
+
+### 8.2 Deque (Double-ended Queue)
+- Sliding Window Maximum
+
+### 8.3 Queue Implementations
+- Implement Queue using Arrays
+- Implement Queue using Stack
+- Implement queue using Linkedlist
+- Design Circular Queue
+
+### 8.4 Rate Limiting / Streaming
+- Recent Counter
+- Hit Counter
+- Moving Average from Data Stream
+- First Unique Character in a Stream
+
+### 8.5 Cache Designs
+- LRU Cache
+- LFU Cache
+
+---
+
+## 9. Binary Tree Patterns
+
+### 9.1 Tree Traversals
+- Inorder Traversal
+- Preorder Traversal
+- Postorder Traversal
+- Level Order Traversal
+- Pre, Post, Inorder in one traversal
+- Zig Zag or Spiral Traversal
+
+### 9.2 Tree Views
+- Boundary Traversal
+- Vertical Order Traversal
+- Top View of BT
+- Bottom view of BT
+- Right/Left View of BT
+
+### 9.3 Tree Properties
+- Maximum Depth in BT
+- Check if two trees are identical
+- Check for balanced binary tree
+- Diameter of Binary Tree
+- Maximum path sum
+- Check for symmetrical BTs
+- Maximum Width of BT
+
+### 9.4 Path Problems
+- Print root to node path in BT
+- LCA in BT
+- Print all nodes at a distance of K in BT
+- Minimum time taken to burn the BT from a given Node
+
+### 9.5 Tree Construction
+- Requirements needed to construct a unique BT
+- Construct a BT from Preorder and Inorder
+- Construct a BT from Postorder and Inorder
+- Serialize and De-serialize BT
+
+### 9.6 Special Traversals
+- Traversal in Constant Space
+- Count total nodes in a complete BT
+
+---
+
+## 10. Binary Search Tree Patterns
+
+### 10.1 BST Basics
+- Search in BST
+- Insert in BST
+- Delete a node in BST
+- Check if a tree is a BST or not
+- Validate Binary Search Tree
+
+### 10.2 BST Queries
+- Floor and Ceil in a BST
+- Kth Smallest and Largest element in BST
+- Inorder successor and predecessor in BST
+- BST iterator
+- Two sum in BST
+
+### 10.3 BST Construction & Modification
+- Construct a BST from a preorder traversal
+- Correct BST with two nodes swapped
+- Convert Min Heap to Max Heap
+
+### 10.4 Advanced BST
+- LCA in BST
+- Largest BST in Binary Tree
+
+---
+
+## 11. Heap Patterns
+
+### 11.1 Heap Basics
+- Heapify Algorithm
+- Build heap from a given Array
+- Implement Min Heap
+- Implement Max Heap
+- Check if an array represents a min heap
+- Heap Sort
+
+### 11.2 Top-K Problems
+- K-th Largest element in an array
+- Kth largest element in a stream
+- Top K Frequent Elements
+- Frequency sort
+
+### 11.3 Sliding Window with Heap
+- Sliding Window Maximum
+- Maximum of numbers in a sliding window
+
+### 11.4 Interval Problems
+- Maximum overlapping interval
+- Merge intervals based on end/start times
+
+### 11.5 Stream Problems
+- Median of a stream
+- First non-repeating character (stream variant)
+
+---
+
+## 12. Dynamic Programming Patterns
+
+### 12.1 1D DP - Linear
+- Climbing stairs
+- Frog Jump
+- Frog jump with K distances
+- Maximum sum of non adjacent elements
+- House robber
+- Decode ways
+- Maximum Product Subarray
+
+### 12.2 2D DP - Grid
+- Ninja's training
+- Grid unique paths
+- Unique paths II
+- Minimum Falling Path Sum
+- Triangle
+- Cherry pickup II
+- Number of ways to reach (N-1, N-1)
+- Maximum product of K continuous elements in Matrix
+
+### 12.3 DP on Stocks
+- Best time to buy and sell stock
+- Best time to buy and sell stock II
+- Best time to buy and sell stock III
+- Best time to buy and sell stock IV
+- Best time to buy and sell stock with transaction fees
+
+### 12.4 DP on Subsequences
+- Subset sum equals to target
+- Partition equal subset sum
+- Partition set into two subsets with minimum absolute sum difference
+- Count subsets with sum K
+- Count partitions with given difference
+- Target sum
+- All subsets sum to N
+
+### 12.5 Knapsack Variations
+- 0 and 1 Knapsack
+- Unbounded knapsack
+- Minimum coins
+- Coin change II
+- Rod cutting problem
+
+### 12.6 Longest Increasing Subsequence
+- Longest Increasing Subsequence
+- Print Longest Increasing Subsequence
+- Largest Divisible Subset
+- Longest String Chain
+- Longest Bitonic Subsequence
+- Number of Longest Increasing Subsequences
+
+### 12.7 DP on Strings
+- Longest common subsequence
+- Longest common substring
+- Longest palindromic subsequence
+- Minimum insertions to make string palindrome
+- Minimum insertions or deletions to convert string A to B
+- Shortest common supersequence
+- Distinct subsequences
+- Edit distance
+- Wildcard matching
+- Shortest Palindrome
+- Longest happy prefix
+
+### 12.8 Matrix Chain Multiplication
+- Matrix chain multiplication
+- Minimum cost to cut the stick
+- Burst balloons
+- Palindrome partitioning II
+
+---
+
+## 13. String Patterns
+
+### 13.1 String Manipulation
+- Reverse every word in a string
+- Reverse vowels in string
+- Reverse string without changing positions of special characters
+- Decode string
+- Reverse substring between each pair of parentheses
+
+### 13.2 Pattern Matching
+- KMP Algorithm or LPS array
+- Z function
+- Rabin Karp Algorithm
+
+### 13.3 Palindrome Problems
+- Check palindrome
+- Check if can be rearranged into palindrome
+- Longest palindromic subsequence
+- Next smallest palindrome
+- Palindrome words removal in sentence
+
+### 13.4 String Counting
+- Count and say
+- Minimum number of bracket reversals
+- Minimum string operation to make both strings equal
+- First occurrence of all characters of s2 in s1
+
+### 13.5 Substring Problems
+- Longest substring without repeating characters
+- Longest sequence between same characters
+- Wildcard matching in all vowels
+
+### 13.6 String Transformation
+- Remove duplicates in string
+- Remove all characters from s1 which are in s2
+- Replace characters of one string present in another
+
+### 13.7 Word Problems
+- String segmentation using dictionary
+- Print all permutations of string
+- Find all possible words from phone digits
+- Word Ladder
+
+---
+
+## 14. Math & Number Theory Patterns
+
+### 14.1 Prime Numbers
+- Twisted Prime Number
+- N prime numbers
+- Prime factors sorting
+- Check if prime
+
+### 14.2 Number Properties
+- Square root (binary search)
+- Nth root
+- Check if power of 2
+- Happy Number
+
+### 14.3 Array Math
+- Kadane's Algorithm
+- Maximum product in array
+- Product of array except self
+- Missing number
+- Find extra element
+- Maximum element at least twice second max
+
+### 14.4 Digit Manipulation
+- Sum of digits
+- Product of digits
+- Add digit to all digits of number
+- Count odd and even digits
+- Reverse number
+
+### 14.5 Combinatorics
+- Pascal's Triangle
+- Binomial coefficients
+- All permutations
+- All combinations
+
+### 14.6 Series & Patterns
+- Fibonacci
+- Series: x/1! - x^3/3! + x^5/5!
+- Triangle/pyramid/diamond patterns
+- Snake pattern
+- Latin square
+
+### 14.7 Mathematical Operations
+- Divide two numbers without multiplication/division
+- Multiplication using + operator
+- Evaluate arithmetic expressions (BODMAS)
+- Luhn algorithm (checksum)
+
+### 14.8 Game Theory
+- Elimination game
+- Josephus problem
+
+---
+
+## 15. Matrix Patterns
+
+### 15.1 Matrix Traversal
+- Spiral matrix traversal
+- Zig-Zag matrix traversal
+- Diagonal traversal
+
+### 15.2 Matrix Transformation
+- Rotate matrix 180°
+- Adaptive filter on 2D grid (averaging)
+
+### 15.3 Matrix Search
+- Search in 2D matrix
+- Find row with maximum 1's
+
+### 15.4 Matrix Algorithms
+- Flood Fill / Paint fill
+- Count islands
+- Maximum product of K continuous elements
+- Sum of elements in rectangle
+- Pathfinding (right & down moves)
+
+---
+
+## 16. Graph Patterns
+
+### 16.1 BFS Applications
+- Word Ladder (Shortest transformation)
+- Rotting Oranges
+- Snake and Ladders
+
+### 16.2 DFS Applications
+- Count islands
+- Flood Fill
+- All paths from source to destination
+
+### 16.3 Cycle Detection
+- Happy Number (cycle in transformation)
+
+---
+
+## 17. System Design / Simulation Patterns
+
+### 17.1 Cache Systems
+- LRU Cache
+- LFU Cache
+
+### 17.2 Application Simulation
+- Task Manager
+- File System simulation
+- ATM simulation
+- Library Management
+- Cab Booking Application
+- Drone delivery minimum charge
+
+### 17.3 Version Management
+- Check if version upgraded/downgraded
+
+---
+
+## 18. Special Algorithms
+
+### 18.1 Chocolate/Wrapper Exchange
+- Chocolate Wrapper Problem
+
+### 18.2 Balanced String
+- Balanced String (count equal R & L)
+
+### 18.3 Comparator Based
+- Form Largest Possible Number From Array
+- Alternate Sorting
+
+### 18.4 Custom Constraints
+- Maximum Sum Using Given Operations (even/prime rules)
+- Least number of bike trips (weight pairing)
+
+---
+
+## Practice Strategy
+
+1. **Start with**: HashMap, Two Pointers, Binary Search basics
+2. **Build foundation**: Recursion, Stack/Queue, Greedy
+3. **Advance to**: Trees, Heaps, DP
+4. **Master**: String algorithms, Advanced DP, Graph algorithms
+
+Focus on understanding the pattern rather than memorizing solutions!
