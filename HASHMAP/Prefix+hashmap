@@ -1,0 +1,179 @@
+1. Longest Subarray with Sum = K
+Key Idea
+
+Use prefix sum and a HashMap to store the first occurrence of each prefix sum.
+
+If:
+
+prefixSum[j] - prefixSum[i] = K
+⇒ prefixSum[i] = prefixSum[j] - K
+
+Algorithm
+
+Maintain sum while traversing the array.
+
+If sum == K, update max length as i + 1.
+
+If (sum - K) exists in the map, update max length.
+
+Store the first occurrence of sum.
+
+Java Code
+public static int longestSubarraySumK(int[] arr, int K) {
+    HashMap<Integer, Integer> map = new HashMap<>();
+    int sum = 0, maxLen = 0;
+
+    for (int i = 0; i < arr.length; i++) {
+        sum += arr[i];
+
+        if (sum == K) {
+            maxLen = i + 1;
+        }
+
+        if (map.containsKey(sum - K)) {
+            maxLen = Math.max(maxLen, i - map.get(sum - K));
+        }
+
+        map.putIfAbsent(sum, i);
+    }
+    return maxLen;
+}
+
+Time / Space
+
+Time: O(n)
+
+Space: O(n)
+
+2. Count Subarrays with Given Sum = K
+Key Idea
+
+Instead of storing first index, store frequency of prefix sums.
+
+If (sum - K) occurred f times, it contributes f subarrays ending at current index.
+
+Algorithm
+
+Initialize map with (0 → 1) to handle sum from index 0.
+
+For each element:
+
+Update sum
+
+Add map.get(sum - K) to count
+
+Increment frequency of sum
+
+Java Code
+public static int countSubarraysSumK(int[] arr, int K) {
+    HashMap<Integer, Integer> map = new HashMap<>();
+    map.put(0, 1);
+
+    int sum = 0, count = 0;
+
+    for (int num : arr) {
+        sum += num;
+
+        if (map.containsKey(sum - K)) {
+            count += map.get(sum - K);
+        }
+
+        map.put(sum, map.getOrDefault(sum, 0) + 1);
+    }
+    return count;
+}
+
+Time / Space
+
+Time: O(n)
+
+Space: O(n)
+
+3. Count Subarrays with Given XOR = K
+Key Idea
+
+Same concept as sum, but using XOR properties:
+
+prefixXor ^ K = required previous prefixXor
+
+Algorithm
+
+Initialize map with (0 → 1)
+
+Traverse array, compute xor
+
+If (xor ^ K) exists, add its frequency to count
+
+Update frequency of xor
+
+Java Code
+public static int countSubarraysXorK(int[] arr, int K) {
+    HashMap<Integer, Integer> map = new HashMap<>();
+    map.put(0, 1);
+
+    int xor = 0, count = 0;
+
+    for (int num : arr) {
+        xor ^= num;
+
+        int required = xor ^ K;
+        if (map.containsKey(required)) {
+            count += map.get(required);
+        }
+
+        map.put(xor, map.getOrDefault(xor, 0) + 1);
+    }
+    return count;
+}
+
+Time / Space
+
+Time: O(n)
+
+Space: O(n)
+
+4. Equilibrium Index of Array (One by One)
+Definition
+
+An index i is an equilibrium index if:
+
+sum(left of i) == sum(right of i)
+
+Optimized Approach
+
+Compute total sum of array.
+
+Maintain leftSum = 0
+
+At index i:
+
+rightSum = totalSum - leftSum - arr[i]
+
+
+If leftSum == rightSum, index is equilibrium.
+
+Java Code
+public static void equilibriumIndices(int[] arr) {
+    int totalSum = 0;
+    for (int num : arr) {
+        totalSum += num;
+    }
+
+    int leftSum = 0;
+
+    for (int i = 0; i < arr.length; i++) {
+        int rightSum = totalSum - leftSum - arr[i];
+
+        if (leftSum == rightSum) {
+            System.out.println("Equilibrium Index: " + i);
+        }
+
+        leftSum += arr[i];
+    }
+}
+
+Time / Space
+
+Time: O(n)
+
+Space: O(1)
