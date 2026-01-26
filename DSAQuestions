@@ -634,13 +634,4 @@
 - Maximum Sum Using Given Operations (even/prime rules)
 - Least number of bike trips (weight pairing)
 
----
 
-## Practice Strategy
-
-1. **Start with**: HashMap, Two Pointers, Binary Search basics
-2. **Build foundation**: Recursion, Stack/Queue, Greedy
-3. **Advance to**: Trees, Heaps, DP
-4. **Master**: String algorithms, Advanced DP, Graph algorithms
-
-Focus on understanding the pattern rather than memorizing solutions!
