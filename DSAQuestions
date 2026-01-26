@@ -10,7 +10,15 @@
 - Top three repeated numbers
 - Sort elements by frequency of occurrence
 - Check if a number can be rearranged into Palindrome (odd/even freq count)
-
+✔ 19. Longest Palindrome
+✔ 20. Common Characters
+✔ 21. Reorganize String
+✔ 22. Minimum Deletions
+✔ 23. Pair Divisible by K
+✔ 24. Ransom Note
+✔ 25. Max Frequency Characters
+✔ 26. Frequency Pattern
+✔ 27. Equal 0s and 1s Substrings
 ### 1.2 Prefix Sum + HashMap
 - Longest subarray with sum K
 - Count subarrays with given sum K
